@@ -1,0 +1,133 @@
+html,body{margin: 0;padding: 0;background:#0da5d6;-webkit-transition: background 800ms ease-in-out;position: static;width: 100%;height: 100%;overflow:hidden;}
+#container{position: absolute;width: 100%;height: 100%;}
+#output{opacity: 0.1;}
+.pages{position: relative;width: 100%;height: 100%;-webkit-user-select: none; -webkit-user-drag: none; -webkit-transform: translate(0, 0); -webkit-transition: all 1000ms ease;}
+.pages section{position: absolute;top: 0;width: 100%;height: 100%;}
+.logo{position: absolute;left: 50%;top: 50%;margin-left: -123px;width: 247px;height: 185px;margin-top: -250px;background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p1.png) no-repeat -256px 0;}
+.middle{text-align: center;position: absolute;top: 50%;width: 200%;margin-top: 20px;left: -50%;}
+.middle img{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p1.png) no-repeat; margin:0 40px; opacity: 0;}
+.middle img:nth-child(1){background-position: -7px -208px;width: 63px;height: 83px;}
+.middle img:nth-child(2){background-position: -76px -205px;width: 91px;height: 90px;}
+.middle img:nth-child(3){background-position: -181px -209px;width: 82px;height: 85px;}
+.middle img:nth-child(4){background-position: -277px -204px;width: 90px;height: 91px;}
+.middle img:nth-child(5){background-position: -376px -205px;width: 92px;height: 90px;}
+.middle img:nth-child(6){background-position: -481px -209px;width: 82px;height: 85px;}
+.middle img:nth-child(7){background-position: -576px -205px;width: 92px;height: 90px;}
+.middle img:nth-child(8){background-position: -677px -204px;width: 91px;height: 91px;}
+.subinfo{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p1.png) no-repeat 0 -345px;width: 772px;height: 49px; position: absolute;left: 50%;top: 50%;margin: 156px 0 0 -386px;opacity: 0;}
+.animatp1 img{opacity: 1;margin: 0 7px;-webkit-transition: all 1s ease-out;-webkit-transition-delay: 0.3s;}
+.animatp1 .subinfo{opacity: 1;-webkit-transition: all 1s ease-out;-webkit-transition-delay: 0.3s;}
+
+.pages .page2{top: 100%;}
+.intro{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p2.png) no-repeat;width: 635px;height: 309px;position: absolute;left: 50%;top: 50%;margin: -160px 0 0 -70px;}
+.shield{position:absolute;left: 50%;top: 50%;margin: -241px 0 0 -550px;width: 408px;height: 482px; font-size: 0;}
+.shield img{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/shield.png) no-repeat; position: absolute;}
+.shield img:nth-child(1){top: 28px;width: 111px;height: 121px;background-position: -10px -34px;  -webkit-transform: translate(460%, -128%) rotate(80deg);}
+.shield img:nth-child(2){left: 113px;width: 176px;height: 149px;background-position: -123px -6px;  -webkit-transform: translate(65%, 279%) rotate(145deg);}
+.shield img:nth-child(3){left: 291px;top: 28px;width: 117px;height: 121px;background-position:-301px -34px; -webkit-transform: translate(400%, 380%) rotate(70deg);}
+.shield img:nth-child(4){top: 151px;left: 5px;width: 106px;height: 176px;background-position: -15px -157px; -webkit-transform: translate(500%, 29%) rotate(110deg);}
+.shield img:nth-child(5){top: 151px;left: 113px;width: 176px;height: 176px;background-position: -123px -157px;-webkit-transform: translate(472%, 73%) rotate(60deg);}
+.shield img:nth-child(6){top: 151px;left: 291px;width: 111px;height: 176px;background-position: -301px -157px;-webkit-transform: translate(195%, 136%) rotate(90deg);}
+.shield img:nth-child(7){top: 329px;left: 31px; width: 80px;height: 100px; background-position: -41px -335px; -webkit-transform: translate(-31%, -106%) rotate(282deg);}
+.shield img:nth-child(8){top: 329px;left: 113px;width: 176px;height: 153px;background-position: -123px -335px;-webkit-transform: translate(47%, -157%) rotate(80deg);}
+.shield img:nth-child(9){top: 329px;left: 291px;width: 83px;height: 102px; background-position: -301px -335px;-webkit-transform: translate(-320%, -410%) rotate(120deg);}
+.animatp2 img:empty{-webkit-transition: all 2s ease-in-out;-webkit-transition-delay: 0.5s;-webkit-transform: translate(0, 0) rotate(0);}
+
+.pages .page3{top: 200%;}
+.intro3{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p3.png) no-repeat 0 -291px;width: 631px;height: 273px; position: absolute;left: 50%;top: 50%;margin: -136px 0 0 -600px;}
+.circle{width:446px;height: 446px;position: absolute;left: 50%;top: 50%;margin: -223px 0 0 100px;}
+.circle img{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p3.png) no-repeat; position: absolute;}
+.circle img:nth-child(1){ background-position: -3px -606px;width:447px;height: 447px;}
+.circle img:nth-child(2){ background-position: -464px -620px;width:403px;height: 403px;left: 50%;top: 50%;margin: -201px 0 0 -201px;}
+.circle img:nth-child(3){ background-position: -882px -643px;width:362px;height: 362px;left: 50%;top: 50%;margin: -181px 0 0 -181px;}
+/*.circle img:nth-child(4){ background-position: -731px -222px;width:359px;height: 359px;left: 50%;top: 50%;margin: -179px 0 0 -179px;}*/
+.rocket{position: absolute;top: 100%;left: 30%;background: url('http://p9.qhimg.com/d/inn/a93b279c/img/p3.png') no-repeat -372px -21px;width: 203px;height: 203px;opacity: 0;}
+.rocket:after{content: "";display: block;position: absolute;background: url('http://p9.qhimg.com/d/inn/a93b279c/img/fire.png') no-repeat;background-size: 100%; width: 101px;height: 46px;bottom: 28px;left: -50px;-webkit-transform: rotate(-45deg);-webkit-transform-origin: right center;}
+/*.animatp3 img:nth-child(1){-webkit-animation: rotating_1 5s infinite linear;-webkit-animation-delay:1s;}
+.animatp3 img:nth-child(2){-webkit-animation: rotating_2 3s infinite linear;-webkit-animation-delay:1s;}
+.animatp3 img:nth-child(3){-webkit-animation: rotating_1 1s infinite linear;-webkit-animation-delay:1s;}*/
+.animatp3 .rocket{-webkit-transition: all 1s ease-in-out;-webkit-transition-delay: 0.5s;left: 50%;top: 50%;margin: -100px 0 0 222px;opacity: 1;/*-webkit-animation: rocket 0.5s infinite linear;-webkit-animation-delay:1.5s;*/}
+/*.animatp3 .rocket:after{-webkit-animation: firing 0.5s infinite linear;-webkit-animation-delay:1.5s;}*/
+
+.pages .page4{top: 300%;}
+.search{background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p4.png) no-repeat;width: 529px;height: 67px;position: absolute;top: 50%;left: -100%;margin: -155px 0 0 0;opacity: 0;}
+.intro4{position: absolute;left: 50%;top: 50%;background: url(http://p9.qhimg.com/d/inn/a93b279c/img/p4.png) no-repeat -565px 0;width: 611px;height: 295px;margin: -147px 0 0 -18px;}
+.key{background: url('http://p9.qhimg.com/d/inn/a93b279c/img/p4.png') no-repeat -570px -330px;width:0;height: 17px;position: absolute;left: 26px;top: 26px;overflow:hidden;}
+.wrap{position: absolute;left: 0;top: 50px;overflow: hidden;}
+.tips{background: url('http://p9.qhimg.com/d/inn/a93b279c/img/p4.png') no-repeat -1px -79px;width: 529px;height: 380px;-webkit-transform: translate(0, -100%);}
+.animatp4 .search{-webkit-transition: all 1s ease-in-out;-webkit-transition-delay: 0.5s;left: 50%;margin-left: -597px;opacity: 1;}
+.animatp4 .key{-webkit-animation: typing 1.5s steps(5) forwards;-webkit-animation-delay:1.3s;}
+.animatp4 .tips{-webkit-transition: all 0.5s ease-in-out;-webkit-transition-delay: 2.8s;-webkit-transform: translate(0, 0);}
+
+.pages .page5{top: 400%;}
+.intro5{width: 1077px;height: 133px;background: url('http://p9.qhimg.com/d/inn/a93b279c/img/p5.png') no-repeat 0 0;position: absolute;left: 50%;top: 50%;margin: -360px 0 0 -538px;}
+.browser{width: 1002px;height: 576px;position: absolute;left: 50%;top: 50%;margin: -190px 0 0 -501px;}
+.bg{position: absolute;width: 100%;height: 100%;background:url(http://p9.qhimg.com/d/inn/a93b279c/img/p5.png) no-repeat -38px -162px,rgba(255,255,255,0.15);opacity: 0;}
+.leftside{top: -100%;border-left: rgba(255,255,255,0.5) solid 1px;height: 100%;}
+.topside{right: -100%;border-top: rgba(255,255,255,0.5) solid 1px;width: 100%;}
+.rightside{top: 100%;right:0;border-right: rgba(255,255,255,0.5) solid 1px;height: 100%;}
+.bottomside{left: -100%;bottom:0;border-bottom: rgba(255,255,255,0.5) solid 1px;width: 100%;}
+.border{position: absolute;opacity: 0;}
+.swrap{position: absolute;top: 30px;left: 67px;width: 0;height: 27px;overflow: hidden;}
+.swrap div{width: 916px;height: 25px;border: rgba(255,255,255,0.5) solid 1px;border-radius: 3px;margin-left: 1px;}
+.line{position: absolute;bottom: 32px;width: 0;border-top: rgba(255,255,255,0.5) solid 1px;}
+.animatp5 .border{-webkit-transition: all 1s ease-in-out;-webkit-transition-delay: 0.5s;opacity: 1;}
+.animatp5 .leftside{top:0;}
+.animatp5 .rightside{top:0;}
+.animatp5 .topside{right:0;}
+.animatp5 .bottomside{left:0;}
+.animatp5 .line{-webkit-transition: all 1s ease-in-out;-webkit-transition-delay: 1.5s;width:100%;}
+.animatp5 .swrap{-webkit-transition: all 1s ease-in-out;-webkit-transition-delay: 1.5s;width:919px;}
+.animatp5 .bg{-webkit-transition: all 2s ease-in-out;-webkit-transition-delay: 1.5s;opacity: 1;}
+
+.menu{position: absolute;right: 10px;top: 50%;z-index: 100;margin-top: -65px;}
+.menu a{display: block;margin:0 auto 6px;width: 20px;height: 20px;overflow: hidden;}
+.menu a span{display: block;width: 4px;height: 4px;border-radius:10px;background: #fff;margin:8px auto 0; }
+.menu .focus span{width: 10px;height: 10px;margin:5px auto 0;-webkit-transition: all 0.2s ease-in-out;}
+
+@-webkit-keyframes typing { 
+    from {
+        width: 0; 
+    } to {
+        width: 88px; 
+    } 
+}
+@-webkit-keyframes firing { 
+    0% {
+        -webkit-transform: rotate(-45deg) scale(0.5);
+    } 
+    50% {
+        -webkit-transform: rotate(-45deg) scale(0.85);
+    } 
+    100% {
+        -webkit-transform: rotate(-45deg) scale(0.5);
+    }
+}
+@-webkit-keyframes rotating_1 { 
+    from {
+        -webkit-transform: rotate(0deg); 
+    } to {
+        -webkit-transform: rotate(360deg); 
+    } 
+}
+@-webkit-keyframes rotating_2 { 
+    from {
+        -webkit-transform: rotate(360deg); 
+    } to {
+        -webkit-transform: rotate(0deg); 
+    } 
+}
+@-webkit-keyframes rocket { 
+    0% {
+    	-webkit-transform: translate(0, 0);
+    }
+    50% {
+    	-webkit-transform: translate(-8px, -8px);
+    } 
+    100% {
+    	-webkit-transform: translate(0, 0px);
+    }
+}
+@media screen and (max-width: 1022px) {
+  .page2,.page3,.page4,.page5{-webkit-transform: scale(0.75);}
+}

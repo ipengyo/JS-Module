@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQueryScrollFollow</title>
+	<style type="text/css">
+	    .container{margin:0 auto; width: 1200px;}
+		.sidebar{width:100px; height: 550px; background-color: #2C3E50; color: #fff; float: left;}
+		.main{width:800px; height: 1200px; background-color: #fff; border: 1px solid #efefef; float: right;}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		var rollStart = $('#rollstart'), //滚动到此区块的时候开始随动
+		    rollSet = $('.sidebar,#sidebar'); //添加rollStart之前的随动区块
+			rollStart.before('<div class="sidebar_rollbox" style="position:fixed;background-color:#000;width:inherit;"></div>');
+		var offset = rollStart.offset(),
+			objWindow = $(window),
+			rollBox = rollStart.prev();
+
+		objWindow.scroll(function() {
+	        if (objWindow.scrollTop() > offset.top){
+	                if(rollBox(null)){
+	                        rollSet.clone().prependTo('.sidebar_rollbox');
+	                }
+	                rollBox.show().stop().animate({top:0,paddingTop:15},400);
+	        } else {
+	                rollBox.hide().stop().animate({top:0},400);
+	        }
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div id="sidebar" class="sidebar">
+			固定侧边栏
+			<div style="width:100%; height:250px;"></div>
+			<div id="rollstart" style="background:#eee; width:100%; height:250px;">12</div>
+		</div>
+		<div class="main">
+			主内容栏
+		</div>
+	</div>
+</body>
+</html>

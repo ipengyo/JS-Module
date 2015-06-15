@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SideFloat</title>
+	<style type="text/css">
+	    #box{float:left; position: relative; width:250px; margin-top:230px;}
+	    .div1{width: 250px;}
+	    .div2{position: fixed; _position:absolute; top:0; z-index: 250px;}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="float" class="div1" style=" background: #eee; height: 200px; float: left;">
+			Demo,侧边固定不随页面滚动
+		</div>
+	</div>
+	<div style="height:1000px; width:500px; background:red; float:right;">
+	<div>
+	<script type="text/javascript">
+		(function(){
+			var oDiv = document.getElementById('float');
+			var H = 0, iE6;
+			var Y = oDiv;
+			while(Y){
+				H += Y.offsetTop;
+				Y = Y.offsetParent;
+			};
+			iE6 = window.ActiveXObject && !window.XMLHttpRequest;
+			if(!iE6){
+				window.onscroll = function(){
+					var s = document.body.scrollTop || document.documentElement.scrollTop;
+					if( s>H ){
+						oDiv.className = "div1 div2";
+						if(iE6){
+							oDiv.style.top = (s-H)+"px";
+						}
+					}else{
+						oDiv.className = "div1";
+					}
+				};
+			}
+		})();
+	</script>
+</body>
+</html>

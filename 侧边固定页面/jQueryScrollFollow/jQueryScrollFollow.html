@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQueryScrollFollow</title>
+	<style type="text/css">
+	    .container{margin:0 auto; width: 1200px;}
+		.sidebar{width:100px; height: 250px; background-color: #2C3E50; color: #fff; float: left;}
+		.main{width:800px; height: 1200px; background-color: #fff; border: 1px solid #efefef; float: right;}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+	/**
+	 * 滚动到一定像素后固定显示
+	 */
+	jQuery(document).ready(function($){
+		$(function(){
+			var $sidebar = $("#sidebar"),
+			    $window = $(window),
+			    offset = $sidebar.offset(),
+			    topPadding = 50;
+			$window.scroll(function(){
+				if($window.scrollTop() > offset.top){
+					$sidebar.stop().animate({
+						marginTop:$window.scrollTop() - offset.top + topPadding
+					});
+				}else{
+					$sidebar.stop().animate({
+						marginTop: 0
+					});
+				}
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="container">
+	<div id="sidebar" class="sidebar">
+		固定侧边栏
+	</div>
+	<div class="main">
+		主内容栏
+	</div>
+</div>
+</body>
+</html>

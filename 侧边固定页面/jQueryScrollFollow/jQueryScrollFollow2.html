@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQueryScrollFollow2</title>
+    <script type="text/javascript" src="jquery.min.js"></script>  
+    <script type="text/javascript">
+    /**
+     * 当滚动到指定模块时置顶该模块
+     */
+    jQuery(document).ready(function($) {
+        $.fn.smartFloat = function() {
+            var position = function(element) {
+                var top = element.position().top,
+                    pos = element.css("position");
+                $(window).scroll(function() {
+                    var scrolls = $(this).scrollTop();
+                    if (scrolls > top) {
+                        if (window.XMLHttpRequest) {
+                            element.css({
+                                position: "fixed",
+                                top: 10
+                            });
+                        } else {
+                            element.css({
+                                top: scrolls
+                            });
+                        }
+                    } else {
+                        element.css({
+                            position: "absolute",
+                            top: top
+                        });
+                    }
+                });
+            };
+            return $(this).each(function() {
+                position($(this));
+            });
+        };
+        //绑定,将引号中的内容替换成你想要下拉的模块的ID或者CLASS名字,如"#ABC",".ABC"
+        $("#suggested").smartFloat();
+    });
+    </script>
+    <style type="text/css">
+        .container{margin:0 auto; width: 1200px;}
+        .sidebar{width:100px; height: 750px; background-color: #2C3E50; color: #fff; float: left;}
+        .suggested{background-color:red; width: 100px; height: 150px;}
+        .main{width:800px; height: 1200px; background-color: #fff; border: 1px solid #efefef; float: right;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="sidebar" class="sidebar">
+        固定侧边栏
+        <div style="width:100px; height:400px;"></div>
+        <div id="suggested" class="suggested">
+            固定侧边栏 1
+        </div>
+    </div>
+
+    <div class="main">
+        主内容栏
+    </div>
+</div>
+</body>
+</html>

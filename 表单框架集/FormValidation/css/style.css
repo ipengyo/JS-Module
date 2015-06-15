@@ -1,0 +1,11 @@
+*{margin:0; padding:0;}
+.form-content{position:relative;  width:500px;  margin:10px auto;border: 1px solid #efefef; }
+.form1{padding:20px;}
+.form-group{margin-bottom: 10px; height: 25px;}
+.form-group label{display:inline-block; width:80px; text-align: right;}
+.form-control{width:200px; margin-left: 20px; height: 25px;}
+.form-submit{margin-left: 100px;}
+
+button{border: none; color:#fff; font-size: 14px; cursor:pointer;}
+.btn{width: 70px; height: 30px;}
+.btn-green{background-color: #337ab7;}

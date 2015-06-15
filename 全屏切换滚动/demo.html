@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PC端全屏切换效果</title>
+	<style type="text/css">
+		h1,body,html{margin:0; padding: 0;}
+		body{font-family:Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;}
+		h1{font-size: 6em; font-weight: normal;}
+		p{font-size: 2em; margin:0.5em 0 2em 0;}
+		html,body{height: 100%;}
+		#container,.section{height: 100%; overflow: hidden;}
+
+		#section0{background-color: #cee;}
+		#section1{background-color: red;}
+		#section2{background-color: green;}
+		#section3{background-color: #ccc;}
+
+		#container{width:400%;}
+		.section{width: 25%;}
+		.left{float: left;}
+	</style>
+</head>
+<body>
+	<div id="container" class="left">
+		<div class="section left" id="section0"></div>
+		<div class="section left" id="section1"></div>
+		<div class="section left" id="section2"></div>
+		<div class="section left" id="section3"></div>
+	</div>
+</body>
+</html>
